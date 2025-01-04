@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family:Outfit;
+}
+@layer base{
+    html{
+        scroll-behavior:smooth;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* General Styling */
+/* Styling for Ordered Lists (Numbered) */
+.rich-text ol {
+    list-style: decimal; /* Use decimal numbering */
+    padding-left: 1.5rem; /* Indent the list */
+    margin-bottom: 1rem; /* Space below the list */
+  }
+  
+  .rich-text ol li {
+    margin-bottom: 0.5rem; /* Space between list items */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    position: relative; /* For number styling */
+    color: #4a4a4a; /* Neutral text color for content */
+  }
+  
+  /* Style for Numbers in Ordered List */
+  .rich-text ol li::marker {
+    color: #6b7280; /* Tailwind's gray-500 */
+    font-weight: 500; /* Slightly bold numbers */
+  }
+  
+  
+  /* Links Styling (if any are added) */
+  .rich-text a {
+    color: #007acc; /* Blue color for links */
+    text-decoration: underline;
+  }
+  
+  .rich-text a:hover {
+    color: #005f99; /* Darker blue on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .rich-text {
+      font-size: 0.9rem; /* Slightly reduce font size on smaller screens */
+    }
+  
+    .rich-text h2 {
+      font-size: 1.25rem; /* Adjust heading size */
+    }
+  }
+  
